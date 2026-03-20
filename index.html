@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Analytics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hsbc-utility-nav">
+  <div class="hsbc-utility-nav__inner">
+    <ul class="hsbc-utility-nav__links">
+      <li class="active"><a href="#">Personal</a></li>
+      <li><a href="#">Private</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Corporate</a></li>
+    </ul>
+    <div class="hsbc-utility-nav__actions">
+      <a href="#">English</a>
+      <a href="#">Register</a>
+      <a class="hsbc-btn hsbc-btn--primary hsbc-btn--small" href="#">Log on</a>
+    </div>
+  </div>
+</div>
+
+<nav class="hsbc-nav">
+  <div class="hsbc-nav__inner">
+    <div class="hsbc-nav__logo">
+      <span class="hsbc-nav__logo-text">HSBC UK</span>
+    </div>
+    <ul class="hsbc-nav__items">
+      <li class="hsbc-nav__item hsbc-nav__item--active">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Banking</span>
+          <span class="hsbc-nav__item-desc">Accounts &amp; services</span>
+        </a>
+      </li>
+      <li class="hsbc-nav__item">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Borrowing</span>
+          <span class="hsbc-nav__item-desc">Short &amp; long term</span>
+        </a>
+      </li>
+      <li class="hsbc-nav__item">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Investing</span>
+          <span class="hsbc-nav__item-desc">Products &amp; planning</span>
+        </a>
+      </li>
+      <li class="hsbc-nav__item">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Insurance</span>
+          <span class="hsbc-nav__item-desc">Property &amp; family</span>
+        </a>
+      </li>
+      <li class="hsbc-nav__item">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Wellbeing</span>
+          <span class="hsbc-nav__item-desc">Financial health &amp; support</span>
+        </a>
+      </li>
+      <li class="hsbc-nav__item">
+        <a href="#">
+          <span class="hsbc-nav__item-label">Help</span>
+          <span class="hsbc-nav__item-desc">Service &amp; security</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="hsbc-container hsbc-mt-md">
+  <ul class="hsbc-breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Banking</a></li>
+    <li>Dashboard</li>
+  </ul>
+</div>
+
+<!-- Page heading -->
+<div class="hsbc-container hsbc-mt-md hsbc-mb-md">
+  <div class="dash-page-header">
+    <div>
+      <h1 class="dash-page-title">Account Overview</h1>
+      <p class="hsbc-text-muted hsbc-text-sm">Welcome back, Alex Kim &mdash; last login 12 Aug 2025, 09:41</p>
+    </div>
+    <div class="hsbc-flex hsbc-flex-gap-sm">
+      <button class="hsbc-btn hsbc-btn--secondary"><i data-lucide="download" class="btn-icon"></i> Export</button>
+      <button class="hsbc-btn hsbc-btn--primary"><i data-lucide="plus" class="btn-icon"></i> New Report</button>
+    </div>
+  </div>
+</div>
+
+<!-- Stat cards -->
+<div class="hsbc-section hsbc-section--gray">
+  <div class="hsbc-container">
+    <div class="hsbc-grid hsbc-grid--4 dash-stat-grid">
+
+      <div class="dash-stat-card">
+        <div class="dash-stat-card__icon dash-stat-card__icon--green">
+          <i data-lucide="trending-up"></i>
+        </div>
+        <p class="dash-stat-card__label">Total Revenue</p>
+        <p class="dash-stat-card__value">$84,320</p>
+        <p class="dash-stat-card__delta dash-delta--pos"><i data-lucide="arrow-up-right"></i> 12.5% vs last month</p>
+      </div>
+
+      <div class="dash-stat-card">
+        <div class="dash-stat-card__icon dash-stat-card__icon--amber">
+          <i data-lucide="users"></i>
+        </div>
+        <p class="dash-stat-card__label">Active Users</p>
+        <p class="dash-stat-card__value">24,810</p>
+        <p class="dash-stat-card__delta dash-delta--pos"><i data-lucide="arrow-up-right"></i> 8.1% vs last month</p>
+      </div>
+
+      <div class="dash-stat-card">
+        <div class="dash-stat-card__icon dash-stat-card__icon--rose">
+          <i data-lucide="shopping-cart"></i>
+        </div>
+        <p class="dash-stat-card__label">Orders</p>
+        <p class="dash-stat-card__value">3,942</p>
+        <p class="dash-stat-card__delta dash-delta--neg"><i data-lucide="arrow-down-right"></i> 2.3% vs last month</p>
+      </div>
+
+      <div class="dash-stat-card">
+        <div class="dash-stat-card__icon dash-stat-card__icon--red">
+          <i data-lucide="percent"></i>
+        </div>
+        <p class="dash-stat-card__label">Conversion</p>
+        <p class="dash-stat-card__value">4.67%</p>
+        <p class="dash-stat-card__delta dash-delta--pos"><i data-lucide="arrow-up-right"></i> 1.2% vs last month</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Charts row -->
+<div class="hsbc-section">
+  <div class="hsbc-container">
+    <div class="dash-mid-row">
+
+      <!-- Donut chart -->
+      <div class="dash-card">
+        <h3 class="dash-card__title">Revenue by Channel</h3>
+        <div class="donut-wrap">
+          <svg viewBox="0 0 120 120" class="donut-svg">
+            <circle class="donut-track" cx="60" cy="60" r="48" />
+            <circle class="donut-seg seg1" cx="60" cy="60" r="48" stroke-dasharray="120 181.8" stroke-dashoffset="0" />
+            <circle class="donut-seg seg2" cx="60" cy="60" r="48" stroke-dasharray="72 229.6" stroke-dashoffset="-120" />
+            <circle class="donut-seg seg3" cx="60" cy="60" r="48" stroke-dasharray="48 253.6" stroke-dashoffset="-192" />
+            <circle class="donut-seg seg4" cx="60" cy="60" r="48" stroke-dasharray="61.8 239.8" stroke-dashoffset="-240" />
+            <text x="60" y="56" class="donut-center-label">Total</text>
+            <text x="60" y="70" class="donut-center-value">$84k</text>
+          </svg>
+          <ul class="donut-legend">
+            <li><span class="donut-dot dot1"></span>Direct <strong>40%</strong></li>
+            <li><span class="donut-dot dot2"></span>Organic <strong>24%</strong></li>
+            <li><span class="donut-dot dot3"></span>Referral <strong>16%</strong></li>
+            <li><span class="donut-dot dot4"></span>Paid <strong>20%</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bar chart -->
+      <div class="dash-card">
+        <div class="dash-card__header">
+          <h3 class="dash-card__title">Monthly Revenue</h3>
+          <div class="hsbc-tabs dash-tabs">
+            <button class="hsbc-tab active">2025</button>
+            <button class="hsbc-tab">2024</button>
+<script src="script.js"></script>
+</body>
+</html>
